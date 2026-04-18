@@ -7,11 +7,11 @@ from openai import OpenAI
 # =========================
 # CONFIG
 # =========================
-OPENAI_API_KEY = ""
-NEO4J_URI = ""
-NEO4J_USER = ""
-NEO4J_PASSWORD = ""
-NEO4J_DATABASE = ""
+OPENAI_API_KEY = st.secrets["OPENAI_API_KEY"]
+NEO4J_URI = st.secrets["NEO4J_URI"]
+NEO4J_USER = st.secrets["NEO4J_USER"]
+NEO4J_PASSWORD = st.secrets["NEO4J_PASSWORD"]
+NEO4J_DATABASE =st.secrets["NEO4J_DATABASE"]
 
 ENTITY_INDEX_NAME = "entity_embedding_index"
 EMBED_MODEL = "text-embedding-3-small"
